@@ -1,0 +1,532 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "obed";
+    src: url("../fonts/Chango/Chango-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Alercon";
+    src: url("../fonts/Sekuya/Sekuya-Regular.ttf");
+}
+
+body {
+
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(216, 216, 216);
+}
+
+header {
+
+    width: 100%;
+    height: 80px;
+    background-color: rgba(244, 245, 247, 0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: flex-start;
+    /* no lo centra verticalmente */
+    gap: 10px;
+
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+}
+
+.textoLogo {
+    display: flex;
+    flex-direction: column;
+}
+
+.textoLogo h1 {
+    position: static;
+    margin: 0;
+
+}
+
+.textoLogo h4 {
+    position: static;
+    margin: 0;
+
+}
+
+
+.nav {
+    width: 600px;
+    background-color: rgb(231, 233, 232);
+    border-radius: 10px;
+    height: 60px;
+    padding: 20px;
+    margin-right: 40px;
+}
+
+.nav ul {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    margin-right: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    font-size: 18px;
+    display: inline;
+    font-family: "alarcon";
+    color: rgb(41, 46, 42);
+
+}
+
+.nav a:hover {
+    cursor: pointer;
+    background: rgb(241, 247, 252);
+    border-radius: 10px;
+
+
+}
+
+h1 {
+    margin-left: 10px;
+    margin-top: 10px;
+    font-family: "obed";
+    top: 0;
+    color: rgb(31, 70, 29);
+    left: 0;
+    z-index: 2;
+    margin-left: 60px;
+    position: static;
+    margin: 0;
+
+
+}
+
+h4 {
+    top: 10;
+    margin-top: 25px;
+    margin-left: 60px;
+    color: rgb(135, 177, 163);
+    left: 10;
+    position: static;
+    margin: 0;
+    z-index: 1;
+    font-family: "alarcon";
+}
+
+#banner {
+
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    background-repeat: repeat;
+}
+
+.imagen {
+    background-image: url(../assets/img/banner1.png);
+    background-repeat: no-repeat;
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    
+    height: 500px;
+    /* controla altura */
+
+    background-image: url(../assets/img/banner1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-top: 40px;
+
+}
+
+.mision {
+
+    flex: 1;
+    min-width: 300px;
+
+}
+
+.parrafo1 {
+    margin-top: 120px;
+    text-align: center;
+    font-size: 40px;
+    font-family: obed;
+    color: rgb(47, 78, 53);
+    margin-left: 0;
+}
+
+
+.parrafo2 {
+
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 0 20px;
+    /* mejor que margin-left */
+    font-size: 18px;
+    text-align: justify;
+    font-family: "alarcon";
+    line-height: 1.5;
+  
+
+}
+
+.btn1 {
+    text-align: center;
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    background-color: rgb(79, 128, 87);
+    font-family: "alarcon";
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+ .btn1:hover{
+   transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(75, 67, 67, 0.2);
+}
+
+#servicios {
+
+    width: 100%;
+    height: 450px;
+    scroll-margin-top: 90px;
+}
+
+.textoSer {
+
+    width: 100%;
+    height: 90px;
+
+    text-align: center;
+
+
+}
+
+.textoSer h2 {
+    margin-top: 30px;
+    font-size: 10px;
+    color: rgb(54, 59, 57);
+
+}
+
+.textoSer h3 {
+    font-size: 30px;
+    font-family: "alarcon";
+    color: rgb(54, 59, 57);
+
+}
+
+.cardsSer {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 0px;
+    gap: 40px;
+}
+
+.card {
+    width: 200px;
+    height: 300px;
+    border: 1px solid rgb(219, 224, 224);
+    box-shadow: 1px 1px 1px gray;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+.cardImg {
+
+    width: 70px;
+    height: 70px;
+
+    padding: 15px;
+
+}
+
+.cardImg img {
+
+    background-color: rgb(147, 235, 205);
+    width: 100%;
+    border-radius: 10px 10px 10px 10px;
+    height: 100%;
+    padding: 5px;
+
+}
+
+.card h3 {
+    margin-top: 10px;
+    text-align: center;
+    font-family: "alarcon";
+    font-size: 30px;
+}
+
+.card p {
+    font-size: 15px;
+    text-align: justify;
+    padding: 30px;
+    font-family: "alarcon";
+    margin-top: -20px;
+}
+
+#productos {
+    width: 100%;
+    height: 450px;
+
+
+    text-align: center;
+    margin-top: 50px;
+}
+
+#productos h2 {
+    font-size: 10px;
+    font-family: "alarcon";
+    scroll-margin-top: 90px;
+}
+
+.textoPro h3 {
+    font-size: 30px;
+    font-family: "alarcon";
+    color: rgb(54, 59, 57);
+}
+
+.cardsPro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 40px;
+
+
+}
+
+.cardPro {
+    width: 200px;
+    height: 300px;
+    background-color: rgb(105, 119, 105);
+
+
+    border-radius: 20px;
+    box-shadow: 1px 1px 3px gray;
+}
+
+.cardPro:hover {
+    cursor: pointer;
+    transition: all;
+    transform: translateY(-10px);
+    transition: 0.3s;
+}
+
+.cardPro img {
+    width: 200px;
+    height: 200px;
+    padding: 10PX;
+
+
+}
+
+.cardPro h2 {
+
+    font-family: "alarcon";
+    font-size: 20px;
+}
+
+.cardPro p {
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    color: rgb(214, 250, 216);
+    font-family: "alarcon";
+}
+
+#clientes {
+    width: 100%;
+    height: 450px;
+    margin-top: 50px;
+    align-items: center;
+    scroll-margin-top: 90px;
+
+}
+
+.textoCli {
+    margin-top: 30px;
+    width: 100%;
+    height: 90px;
+    text-align: center;
+
+}
+
+.textoCli h2 {
+    font-size: 10px;
+    font-family: "alarcon";
+    color: rgb(54, 59, 57);
+
+}
+
+.textoCli h3 {
+    font-size: 30px;
+    font-family: "alarcon";
+    color: rgb(54, 59, 57);
+}
+
+.cardsCli {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 60px;
+
+
+
+}
+
+.cardCli {
+    width: 200px;
+    height: 300px;
+    background-color: rgb(209, 224, 209);
+    border-radius: 20px;
+    box-shadow: 1px 1px 3px gray;
+
+}
+
+.cardCli:hover {
+    transform: translateY(-10px);
+    transition: 0.3s;
+
+}
+
+.imgCli {
+    width: 80px;
+    height: 80px;
+}
+
+.imgCli img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    margin-top: -30px;
+    margin-left: -20px;
+    box-shadow: 2px 2px 4px gray;
+}
+
+.cardCli p {
+    font-size: 12px;
+    text-align: justify;
+    padding: 15px;
+    font-family: "alarcon";
+}
+
+.cardCli h2 {
+    font-size: 20px;
+    font-family: "alarcon";
+    padding-left: 15px;
+}
+
+.cardCli h3 {
+    font-size: 8px;
+    font-family: "alarcon";
+    padding-left: 15px;
+    color: rgb(51, 78, 55);
+}
+
+footer {
+    scroll-margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: #232c22;
+    color: rgb(221, 215, 215);
+   
+}
+#pieP .datos {
+    text-align: justify;
+    font-family: "alarcon";
+    
+}
+
+.enlaces {
+    text-align: center;
+
+    gap: 20px;
+}
+
+.enlaces a {
+    margin-top: 5px;
+    display: block;
+    text-decoration: none;
+    color: white;
+
+}
+
+.certi img {
+    margin-top: 20px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px
+}
+
+.contacto {
+
+margin-top: -10px;
+    display: block;
+
+
+}
+
+.contacto h2 {
+    margin: 10px;
+}
+
+.contacto input {
+    display: block;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.contacto textarea {
+    margin: 10px;
+    width: 190px;
+    border-radius: 10px;
+    border: none;
+}
+.contacto .btn{
+    display: block;
+    width: 100px;
+    height: 30px;
+    margin-left: 55px;
+    border-radius: 5px;
+    border: none;
+      background-color: rgb(79, 128, 87);
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.contacto .btn:hover{
+   transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}

@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "obed";
+    src: url(../fonts/Chango/Chango-Regular.ttf);
+}
+@font-face {
+    font-family: "style2";
+    src: url(../fonts/Sekuya/Sekuya-Regular.ttf);
+}
+header{
+
+    width: 100%;
+    height: 80px;
+    background-color: rgba(244, 245, 247, 0.7);
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+    position: fixed;
+    top: 0;
+}
+.logo{
+     display: flex;
+    align-items: flex-start; /* no lo centra verticalmente */
+    gap: 10px;
+   
+}
+.logo img{
+     width: 50px;
+    height: 50px;
+    margin-left: 20px;
+}
+
+.textoLogo{
+     display:flex;
+    flex-direction: column;
+}
+.textoLogo h1{
+position: static;
+    margin: 0;
+
+}
+.textoLogo h4{
+    position: static;
+    margin: 0;
+
+}
+    
+
+.nav{
+    width: 200px;
+    background-color: rgb(231, 233, 232);
+    border-radius: 10px;
+    height: 60px;
+    padding: 20px;  
+    margin-right: 40px;
+}
+
+.nav ul{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    margin-right: 20px;
+}
+.nav a{
+    text-decoration: none;
+    font-size: 18px;
+    display: inline;
+    font-family: "alarcon";
+    color: rgb(70, 107, 75);
+    
+}
+.nav a:hover{
+  cursor: pointer;
+  background: rgb(241, 247, 252);
+  border-radius: 10px;
+  
+}
+h1{
+    margin-left: 10px;
+    margin-top: 10px;
+font-family: "obed";
+    top:0;
+    color: rgb(31, 70, 29);
+    left: 0;
+    z-index: 2;
+    margin-left: 60px;
+     position: static;
+    margin: 0;
+    
+
+}
+h4{
+    top: 10;
+    margin-top: 25px;
+    margin-left: 60px;
+    color: rgb(135, 177, 163);
+    left: 10;
+     position: static;
+    margin: 0;
+    z-index: 1;
+  font-family: "alarcon";
+}
+.equipo{
+    margin-top: 80px;
+    display: flex;  
+    justify-content: center;
+    align-items: center;  
+  width:100%;
+  height: 600px;
+  
+}
+
+
+
+
+
+
+
+.imgEqui{
+background-image: url(../assets/img/equipo3.png);
+background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+
+    border-radius: 20px;   
+   
+}
+.textoEqui {
+     background-color: rgba(244, 245, 247, 0.2);
+    width: 600px;
+    margin-top: 50px;
+    margin-left: 360px;
+   
+  border-radius: 20px;
+}
+.textoEqui h2{
+ 
+    text-align: center;
+    font-size: 20px;
+   font-family: "style2";
+   
+
+}
+
+.textoEqui p{
+    margin-top: 10px;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 10px;
+
+
+}
