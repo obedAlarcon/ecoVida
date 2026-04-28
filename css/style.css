@@ -126,81 +126,128 @@ h4 {
     font-family: "alarcon";
 }
 
-#banner {
+#banner{
+    margin-top: 90px;
 
-    margin-top: 60px;
+    width: 100%;
+
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    background-repeat: repeat;
+
+    padding: 40px 60px;
+    gap: 40px;
+
+    overflow: hidden;
 }
 
-.imagen {
-    background-image: url(../assets/img/banner1.png);
-    background-repeat: no-repeat;
+/* TEXTO */
+
+.mision{
     flex: 1;
-    min-width: 300px;
-    max-width: 500px;
-    
+    min-width: 320px;
+    max-width: 650px;
+
+    animation: aparecer 1s ease;
+}
+
+.parrafo1{
+    font-size: 55px;
+    font-family: "obed";
+    color: rgb(47, 78, 53);
+
+    line-height: 1.2;
+
+    margin-bottom: 25px;
+}
+
+.parrafo2{
+    font-size: 20px;
+    line-height: 1.8;
+
+    color: rgb(70, 70, 70);
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin-bottom: 35px;
+}
+
+/* BOTON */
+
+.btn1{
+    display: inline-block;
+
+    background: linear-gradient(
+        135deg,
+        rgb(79, 128, 87),
+        rgb(45, 95, 55)
+    );
+
+    color: white;
+    text-decoration: none;
+
+    padding: 15px 35px;
+
+    border-radius: 40px;
+
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    transition: 0.4s ease;
+
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.15);
+}
+
+.btn1:hover{
+    transform: translateY(-6px) scale(1.03);
+
+    box-shadow: 0px 15px 25px rgba(0,0,0,0.2);
+}
+
+/* IMAGEN */
+
+.imagen{
+    flex: 1;
+    min-width: 320px;
+    max-width: 550px;
+
     height: 500px;
-    /* controla altura */
 
     background-image: url(../assets/img/banner1.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    margin-top: 40px;
 
+    animation: flotar 4s ease-in-out infinite;
 }
 
-.mision {
+/* ANIMACIONES */
 
-    flex: 1;
-    min-width: 300px;
+@keyframes flotar{
+    0%{
+        transform: translateY(0px);
+    }
 
+    50%{
+        transform: translateY(-15px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
 }
 
-.parrafo1 {
-    margin-top: 120px;
-    text-align: center;
-    font-size: 40px;
-    font-family: obed;
-    color: rgb(47, 78, 53);
-    margin-left: 0;
-}
+@keyframes aparecer{
+    from{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
 
-
-.parrafo2 {
-
-    margin-top: 20px;
-    margin-bottom: 40px;
-    padding: 0 20px;
-    /* mejor que margin-left */
-    font-size: 18px;
-    text-align: justify;
-    font-family: "alarcon";
-    line-height: 1.5;
-  
-
-}
-
-.btn1 {
-    text-align: center;
-    display: block;
-    width: 200px;
-    margin: 0 auto;
-    background-color: rgb(79, 128, 87);
-    font-family: "alarcon";
-    padding: 10px;
-    border: none;
-    border-radius: 20px;
-    color: white;
-    font-size: 15px;
-    text-decoration: none;
-    margin-bottom: 30px;
-}
- .btn1:hover{
-   transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(75, 67, 67, 0.2);
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
 
 #servicios {

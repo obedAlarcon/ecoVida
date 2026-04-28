@@ -83,7 +83,7 @@ Este proyecto forma parte de un proceso formativo, por lo que:
 
 ##  Posibles mejoras
 
-* Adaptación a dispositivos móviles (responsive design)
+* Adaptación a dispositivos móviles No (responsive design)
 * Implementación de JavaScript
 * Formulario funcional
 * Optimización de estilos y estructura
